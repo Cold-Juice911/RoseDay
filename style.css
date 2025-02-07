@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:PP mori;
+    
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+@media (max-width:500px) {
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: #122139;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box{
+        background-color: #122139;
+        color: #f8cfd6;
+        height: 98%;
+        width: 100%;
+        position: relative;
+    }
+    
+    .petal1{
+        background-color: #B81B43;
+        height: 80px;
+        width: 47px;
+        position: absolute;
+        top: 37%;
+        left: 55%;
+        transform: rotateZ(30deg);
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        scale: 1.25;
+        z-index: 3;
+    }
+    
+    .petal2{
+        background-color: #B81B43;
+        height: 80px;
+        width: 47px;
+        position: absolute;
+        top: 37%;
+        right: 55%;
+        transform: rotateZ(-30deg);
+        border-bottom-left-radius: 35px;
+        border-top-right-radius: 35px;
+        scale: 1.25;
+        z-index: 3;
+    }
+    
+    .petal3{
+        background-color: #C9204B;
+        height: 82px;
+        width: 48px;
+        position: absolute;
+        top: 33.5%;
+        left: 51%;
+        transform: rotateZ(2.5deg);
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        scale: 1.25;
+        z-index: 2;
+    }
+    
+    .petal4{
+        background-color: #C9204B;
+        height: 82px;
+        width: 48px;
+        position: absolute;
+        top: 33.5%;
+        right: 51%;
+        transform: rotateZ(-2.5deg);
+        border-bottom-left-radius: 35px;
+        border-top-right-radius: 35px;
+        scale: 1.25;
+        z-index: 2;
+    }
+    
+    .petal5{
+        background-color: #D52D58;
+        height: 50px;
+        width: 25px;
+        position: absolute;
+        top: 32.5%;
+        left: 49%;
+        transform: rotateZ(5deg);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 10px;
+        scale: 1.25;
+    }
+    
+    .petal6{
+        background-color: #D52D58;
+        height: 50px;
+        width: 25px;
+        position: absolute;
+        top: 32.5%;
+        right: 49%;
+        transform: rotateZ(-5deg);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 10px;
+        scale: 1.25;
+    }
+    
+    .petal7{
+        background-color: #9E183A;
+        height: 70px;
+        width: 45px;
+        position: absolute;
+        top: 41%;
+        left: 56%;
+        transform: rotateZ(55deg);
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        scale: 1.15;
+        z-index: 4;
+    }
+    
+    .petal8{
+        background-color: #9E183A;
+        height: 70px;
+        width: 45px;
+        position: absolute;
+        bottom: 28%;
+        left: 32%;
+        transform: rotateZ(55deg);
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        z-index: 4;
+    }
+
+    .stem{
+        background-color: green;
+        position: absolute;
+        height: 220px;
+        width: 10px;
+        top: 45%;
+        left: 48.5%;
+    }
+    
+    .leaf2{
+        background-color: #066406;
+        height: 50px;
+        width: 25px;
+        position: absolute;
+        top: 56%;
+        left: 54%;
+        transform: rotateZ(55deg);
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        scale: 1.15;
+        z-index: 4;
+    }
+    
+    .leaf1{
+        background-color: green;
+        height: 50px;
+        width: 25px;
+        position: absolute;
+        top: 54%;
+        left: 40%;
+        transform: rotateZ(130deg);
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        scale: 1.15;
+        z-index: 4;
+    }
+
+    #click{
+        height: 40px;
+        width: 100px;
+        background-color: palevioletred;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-family: "Delius", serif;
+        font-weight: bold;
+    }
+
+    .heading{
+        position: absolute;
+        top: 0.5%;
+        left: 0.5%;
+    }
+
+    #headpara{
+        text-align: center;
+        font-size: 5rem;
+        line-height: 5.4rem;
+        font-family: "Delius Unicase", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #headpara #rose{
+        color: #e4326e;
+        font-family: "Delius Swash Caps", serif;
+        font-weight: bold;
+    }
+
+    .para{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 1%;
+        left: 6%;
+    }
+
+    #parain{
+        text-align: center;
+        font-size: 1.13rem;
+        line-height: 1.5rem;
+        font-family: "Delius", serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    #lol{
+        display: none;
+        font-family: "Delius", serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 1.2rem;
+        color: #e4326e;
+    }
+}
